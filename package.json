@@ -1,0 +1,20 @@
+{
+  "name": "quilting-guild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmathis94/Quilting-Guild.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmathis94/Quilting-Guild/issues"
+  },
+  "homepage": "https://github.com/cmathis94/Quilting-Guild#readme"
+}
