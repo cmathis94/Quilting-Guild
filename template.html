@@ -8,24 +8,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <title>Quilting Guild</title>
+    <title>Main Street Quilt Guild</title>
   </head>
   <body style="background-color: #eeeeee">
-    <img
+    <!-- <img
       src="https://images.squarespace-cdn.com/content/v1/615a034dbdaf2c6fb47df2fe/1633292999202-E8YU8ESL8AR0RTW97EBQ/quilting"
       style="width: 100%; height: 200px; object-fit: cover"
-    />
+    /> -->
 
     <nav
-      class="navbar is-white is-spaced"
+      class="navbar is-spaced is-fixed-top py-0"
       role="navigation"
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <h1 class="title">Quilting Guild</h1>
-        </a>
-
         <a
           role="button"
           class="navbar-burger"
@@ -39,17 +35,20 @@
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbarBasicExample" class="navbar-menu ml-4">
         <div class="navbar-start">
           <a class="navbar-item"> Home </a>
 
           <a class="navbar-item"> Events </a>
 
+          <a class="navbar-item"> Gallery </a>
+
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More </a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item"> About </a>
+              <a class="navbar-item"> Documents </a>
+              <a class="navbar-item"> Forum </a>
               <a class="navbar-item"> Contact </a>
               <hr class="navbar-divider" />
               <a class="navbar-item"> Report an issue </a>
@@ -70,26 +69,46 @@
       </div>
     </nav>
 
-    <section class="section">
-      <div class="container">
-        <div class="columns content is-normal">
-          <div class="column is-full">
+    <section class="section py-0 mt-6">
+      <div class="container mt-6">
+        <div class="columns content is-normal mt-6">
+          <div class="column is-full mt-5">
+            <div class="columns is-centered mb-0">
+              <div class="column is-10 pt-0">
+                <figure class="image">
+                  <img
+                    src="./media/img/MSQG_Logo.png"
+                    alt=""
+                    style="max-height: 85%; max-width: 85%"
+                  />
+                </figure>
+              </div>
+            </div>
             <div class="columns is-centered mb-4">
-              <div class="column is-10">
+              <div class="column is-12">
                 <div class="box">
                   <div class="columns is-centered">
                     <div class="column is-one-third">
-                      <h4 class="title is-4">About Us</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Doloribus facere rem soluta odit at provident sunt
-                        repellendus, eligendi ex harum commodi cumque qui
-                        incidunt, esse iure doloremque! Eveniet, labore
-                        delectus. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Doloribus quasi sequi, tempore
-                        commodi, exercitationem debitis iure iusto reprehenderit
-                        adipisci dolores natus ipsum doloremque sint.
-                        Exercitationem explicabo eius unde debitis at!
+                      <div class="tabs is-boxed mb-2">
+                        <ul class="m-0">
+                          <li class="is-active">
+                            <a href=""> About Us </a>
+                          </li>
+                          <li class="">
+                            <a href=""> Mission </a>
+                          </li>
+                          <li class="">
+                            <a href=""> Description </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <p class="mx-2">
+                        Main Street Quilt and Thread Guild, a Round Rock, TX
+                        area quilt guild, is dedicated to fostering the
+                        appreciation of quilts, quilting and the other fiber
+                        arts among both quilters and the public, and to provide
+                        an encouraging environment in which fiber artists can
+                        practice and exchange ideas.
                       </p>
                     </div>
                     <div class="column is-two-thirds">
@@ -108,7 +127,7 @@
               </div>
             </div>
             <div class="columns is-centered my-4">
-              <div class="column is-10">
+              <div class="column is-12">
                 <div class="box">
                   <div class="has-text-centered">
                     <h4 class="title is-4">Events Calendar</h4>
@@ -163,7 +182,7 @@
     <footer class="footer py-4" style="background-color: white">
       <div class="content has-text-centered">
         <p>
-          <strong>Quilt Guild</strong> by
+          <strong>Main Street Quilt Guild</strong> by
           <a href="https://collinmathis.com">Collin Mathis</a>. The source code
           is licensed
           <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The

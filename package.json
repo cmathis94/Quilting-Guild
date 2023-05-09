@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/cmathis94/Quilting-Guild/issues"
   },
-  "homepage": "https://github.com/cmathis94/Quilting-Guild#readme"
+  "homepage": "https://github.com/cmathis94/Quilting-Guild#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.1.0",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
 }
