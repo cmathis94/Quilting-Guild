@@ -25,3 +25,19 @@ app.use(methodOverride('_method'));
 app.get('/', (req, res) => {
   res.render('home');
 });
+
+app.get('/about', async (req, res) => {
+  res.render('browse/about');
+});
+
+app.get('/contact-us', async (req, res) => {
+  res.render('/browse/contact');
+});
+
+app.get('/events', async (req, res) => {
+  res.render('/browse/events');
+});
+
+app.get('/gallery', async (req, res) => {
+  res.render('/browse/gallery');
+});

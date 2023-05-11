@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "repository": {
     "type": "git",
@@ -18,12 +21,14 @@
   },
   "homepage": "https://github.com/cmathis94/Quilting-Guild#readme",
   "dependencies": {
+    "bulma": "^0.9.4",
     "ejs": "^3.1.9",
     "ejs-mate": "^4.0.0",
     "express": "^4.18.2",
     "method": "^2.0.0",
     "method-override": "^3.0.0",
     "mongoose": "^7.1.0",
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.22",
     "path": "^0.12.7"
   }
