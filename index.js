@@ -4,9 +4,8 @@ const mongoose = require('mongoose');
 const exp = require('constants');
 const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
-const bootstrap = require('bootstrap');
-
-mongoose.connect('mongodb://localhost:27017/ms-quilt-guild');
+/* const bootstrap = require('bootstrap'); */
+/* mongoose.connect('mongodb://localhost:27017/ms-quilt-guild'); */
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

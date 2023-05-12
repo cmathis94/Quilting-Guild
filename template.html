@@ -1,172 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Main Street Quilt Guild</title>
-  </head>
-  <body style="background-color: #eeeeee">
-    <!-- <img
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Main Street Quilt Guild</title>
+</head>
+
+<body style="background-color: #eeeeee">
+  <!-- <img
       src="https://images.squarespace-cdn.com/content/v1/615a034dbdaf2c6fb47df2fe/1633292999202-E8YU8ESL8AR0RTW97EBQ/quilting"
       style="width: 100%; height: 200px; object-fit: cover"
     /> -->
 
-    <nav
-      class="navbar is-spaced is-fixed-top py-0"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+  <nav class="navbar is-spaced is-fixed-top py-0" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-      <div id="navbarBasicExample" class="navbar-menu ml-4">
-        <div class="navbar-start">
-          <a class="navbar-item"> Home </a>
+    <div id="navbarBasicExample" class="navbar-menu ml-4">
+      <div class="navbar-start">
+        <a class="navbar-item"> Home </a>
 
-          <a class="navbar-item"> Events </a>
+        <a class="navbar-item"> Events </a>
 
-          <a class="navbar-item"> Gallery </a>
+        <a class="navbar-item"> Gallery </a>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> More </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link"> More </a>
 
-            <div class="navbar-dropdown">
-              <a class="navbar-item"> Documents </a>
-              <a class="navbar-item"> Forum </a>
-              <a class="navbar-item"> Contact </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item"> Report an issue </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-info is-light">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light"> Log in </a>
-            </div>
+          <div class="navbar-dropdown">
+            <a class="navbar-item"> Documents </a>
+            <a class="navbar-item"> Forum </a>
+            <a class="navbar-item"> Contact </a>
+            <hr class="navbar-divider" />
+            <a class="navbar-item"> Report an issue </a>
           </div>
         </div>
       </div>
-    </nav>
 
-    <section class="section py-0 mt-6">
-      <div class="container mt-6">
-        <div class="columns content is-normal mt-6">
-          <div class="column is-full mt-5">
-            <div class="columns is-centered mb-0">
-              <div class="column is-10 pt-0">
-                <figure class="image">
-                  <img
-                    src="./media/img/MSQG_Logo.png"
-                    alt=""
-                    style="max-height: 85%; max-width: 85%"
-                  />
-                </figure>
-              </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-info is-light">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light"> Log in </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section py-0 mt-6">
+    <div class="container mt-6">
+      <div class="columns content is-normal mt-6">
+        <div class="column is-full mt-5">
+          <div class="columns is-centered mb-0">
+            <div class="column is-10 pt-0">
+              <figure class="image">
+                <img src="./media/img/MSQG_Logo.png" alt="" style="max-height: 85%; max-width: 85%" />
+              </figure>
             </div>
-            <div class="columns is-centered mb-4">
-              <div class="column is-12">
-                <div class="box">
-                  <div class="columns is-centered">
-                    <div class="column is-one-third">
-                      <div class="tabs is-boxed mb-2">
-                        <ul class="m-0">
-                          <li class="is-active">
-                            <a href=""> About Us </a>
-                          </li>
-                          <li class="">
-                            <a href=""> Mission </a>
-                          </li>
-                          <li class="">
-                            <a href=""> Description </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <p class="mx-2">
-                        Main Street Quilt and Thread Guild, a Round Rock, TX
-                        area quilt guild, is dedicated to fostering the
-                        appreciation of quilts, quilting and the other fiber
-                        arts among both quilters and the public, and to provide
-                        an encouraging environment in which fiber artists can
-                        practice and exchange ideas.
-                      </p>
+          </div>
+          <div class="columns is-centered mb-4">
+            <div class="column is-12">
+              <div class="box">
+                <div class="columns is-centered">
+                  <div class="column is-one-third">
+                    <div class="tabs is-boxed mb-2">
+                      <ul class="m-0">
+                        <li class="is-active">
+                          <a href=""> About Us </a>
+                        </li>
+                        <li class="">
+                          <a href=""> Mission </a>
+                        </li>
+                        <li class="">
+                          <a href=""> Description </a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="column is-two-thirds">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0080/8442/2715/files/HandQuilt2_3.jpg?v=1625675860"
-                        style="
+                    <p class="mx-2">
+                      Main Street Quilt and Thread Guild, a Round Rock, TX
+                      area quilt guild, is dedicated to fostering the
+                      appreciation of quilts, quilting and the other fiber
+                      arts among both quilters and the public, and to provide
+                      an encouraging environment in which fiber artists can
+                      practice and exchange ideas.
+                    </p>
+                  </div>
+                  <div class="column is-two-thirds">
+                    <img src="https://cdn.shopify.com/s/files/1/0080/8442/2715/files/HandQuilt2_3.jpg?v=1625675860"
+                      style="
                           border-radius: 5px;
                           width: 100%;
                           height: 375px;
                           object-fit: cover;
-                        "
-                      />
-                    </div>
+                        " />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="columns is-centered my-4">
-              <div class="column is-12">
-                <div class="box">
-                  <div class="has-text-centered">
-                    <h4 class="title is-4">Events Calendar</h4>
+          </div>
+          <div class="columns is-centered my-4">
+            <div class="column is-12">
+              <div class="box">
+                <div class="has-text-centered">
+                  <h4 class="title is-4">Events Calendar</h4>
+                </div>
+                <hr />
+                <div class="columns is-gapless is-vcentered">
+                  <div class="column is-three-fifths">
+                    <img
+                      src="https://www.printabulls.com/wp-content/uploads/2022/10/Printable-April-2023-Calendar-1-1024x791.jpg" />
                   </div>
-                  <hr />
-                  <div class="columns is-gapless is-vcentered">
-                    <div class="column is-three-fifths">
-                      <img
-                        src="https://www.printabulls.com/wp-content/uploads/2022/10/Printable-April-2023-Calendar-1-1024x791.jpg"
-                      />
-                    </div>
-                    <div class="column is-two-fifths">
-                      <!-- <h4 class="title is-4 has-text-centered">
+                  <div class="column is-two-fifths">
+                    <!-- <h4 class="title is-4 has-text-centered">
                           Upcoming Events
                         </h4> -->
-                      <div class="content">
-                        <table>
-                          <thead>
-                            <th class="has-text-centered">Upcoming Events</th>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>April 4th: Guild Meeting</td>
-                            </tr>
-                            <tr>
-                              <td>April 7th: Workshop</td>
-                            </tr>
-                            <tr>
-                              <td>April 12th: Class 1</td>
-                            </tr>
-                            <tr>
-                              <td>April 19th: Class 2</td>
-                            </tr>
-                            <tr>
-                              <td>April 26th: Class 3</td>
-                            </tr>
-                            <tr>
-                              <td>April 30th: Example</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                    <div class="content">
+                      <table>
+                        <thead>
+                          <th class="has-text-centered">Upcoming Events</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>April 4th: Guild Meeting</td>
+                          </tr>
+                          <tr>
+                            <td>April 7th: Workshop</td>
+                          </tr>
+                          <tr>
+                            <td>April 12th: Class 1</td>
+                          </tr>
+                          <tr>
+                            <td>April 19th: Class 2</td>
+                          </tr>
+                          <tr>
+                            <td>April 26th: Class 3</td>
+                          </tr>
+                          <tr>
+                            <td>April 30th: Example</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -175,42 +160,42 @@
           </div>
         </div>
       </div>
-    </section>
-    <footer class="footer py-4" style="background-color: white">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Main Street Quilt Guild</strong> by
-          <a href="https://collinmathis.com">Collin Mathis</a>. The source code
-          is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-          website content is licensed
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-            >CC BY NC SA 4.0</a
-          >.
-        </p>
-      </div>
-    </footer>
-  </body>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(
-        document.querySelectorAll('.navbar-burger'),
-        0
-      );
+    </div>
+  </section>
+  <footer class="footer py-4" style="background-color: white">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Main Street Quilt Guild</strong> by
+        <a href="https://collinmathis.com">Collin Mathis</a>. The source code
+        is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+        website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll('.navbar-burger'),
+      0
+    );
 
-      // Add a click event on each of them
-      $navbarBurgers.forEach((el) => {
-        el.addEventListener('click', () => {
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
+    // Add a click event on each of them
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener('click', () => {
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
 
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-        });
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
       });
     });
-  </script>
+  });
+</script>
+
 </html>

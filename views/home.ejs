@@ -1,39 +1,34 @@
 <%= layout('layouts/boilerplate') %>
 
-<section class="section py-0">
   <div class="container">
-    <div class="columns content is-normal">
-      <div class="column is-full mt-5">
-        <div class="columns is-centered mb-0">
-          <div class="column is-10 pt-0">
-            <figure class="image">
-              <img
-                src="/img/MSQG_Logo.png"
-                alt=""
-                style="max-height: 85%; max-width: 85%"
-              />
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <figure class="text-center">
+              <img class="img-fluid" src="/img/MSQG_Logo.png" alt="" style="max-height: 85%; max-width: 85%" />
             </figure>
           </div>
         </div>
-        <div class="columns is-centered mb-4">
-          <div class="column is-12">
-            <div class="box">
-              <div class="columns is-centered">
-                <div class="column is-one-third">
-                  <div class="tabs is-boxed mb-2">
-                    <ul class="m-0">
-                      <li class="is-active">
-                        <a href=""> About Us </a>
-                      </li>
-                      <li class="">
-                        <a href=""> Mission </a>
-                      </li>
-                      <li class="">
-                        <a href=""> Description </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <p class="mx-2">
+        <div class="card mb-5 shadow">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4">
+                <div>
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href=""> About Us </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href=""> Mission </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href=""> Description </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="m-3">
+                  <p class="card-text">
                     Main Street Quilt and Thread Guild, a Round Rock, TX area
                     quilt guild, is dedicated to fostering the appreciation of
                     quilts, quilting and the other fiber arts among both
@@ -42,65 +37,62 @@
                     ideas.
                   </p>
                 </div>
-                <div class="column is-two-thirds">
-                  <img
-                    src="https://cdn.shopify.com/s/files/1/0080/8442/2715/files/HandQuilt2_3.jpg?v=1625675860"
-                    style="
+              </div>
+              <div class="col-8">
+                <img src="https://cdn.shopify.com/s/files/1/0080/8442/2715/files/HandQuilt2_3.jpg?v=1625675860" style="
                       border-radius: 5px;
                       width: 100%;
                       height: 375px;
                       object-fit: cover;
-                    "
-                  />
-                </div>
+                    " />
               </div>
             </div>
           </div>
         </div>
-        <div class="columns is-centered my-4">
-          <div class="column is-12">
-            <div class="box">
-              <div class="has-text-centered">
-                <h4 class="title is-4">Events Calendar</h4>
+        <div class="card mb-5 shadow">
+          <div class="card-body">
+            <div class="row align-items-center justify-content-center">
+              <div class="text-center">
+                <h4 class="h4">Events Calendar</h4>
               </div>
               <hr />
-              <div class="columns is-gapless is-vcentered">
-                <div class="column is-three-fifths">
-                  <img
-                    src="https://www.printabulls.com/wp-content/uploads/2022/10/Printable-April-2023-Calendar-1-1024x791.jpg"
-                  />
-                </div>
-                <div class="column is-two-fifths">
-                  <!-- <h4 class="title is-4 has-text-centered">
-                        Upcoming Events
-                      </h4> -->
-                  <div class="content">
-                    <table>
-                      <thead>
-                        <th class="has-text-centered">Upcoming Events</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>April 4th: Guild Meeting</td>
-                        </tr>
-                        <tr>
-                          <td>April 7th: Workshop</td>
-                        </tr>
-                        <tr>
-                          <td>April 12th: Class 1</td>
-                        </tr>
-                        <tr>
-                          <td>April 19th: Class 2</td>
-                        </tr>
-                        <tr>
-                          <td>April 26th: Class 3</td>
-                        </tr>
-                        <tr>
-                          <td>April 30th: Example</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+              <div class="col-8">
+                <img class="img-fluid"
+                  src="https://www.printabulls.com/wp-content/uploads/2022/10/Printable-April-2023-Calendar-1-1024x791.jpg" />
+              </div>
+              <div class="col-4">
+                <div class="">
+                  <table class="table">
+                    <thead>
+                      <th class="text-center" scope="col" colspan="2">Upcoming Events</th>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <td class=>April 4th:</td>
+                        <td>Guild Meeting</td>
+                      </tr>
+                      <tr>
+                        <td>April 7th:</td>
+                        <td>Workshop</td>
+                      </tr>
+                      <tr>
+                        <td>April 12th:</td>
+                        <td>Class 1</td>
+                      </tr>
+                      <tr>
+                        <td>April 19th:</td>
+                        <td>Class 2</td>
+                      </tr>
+                      <tr>
+                        <td>April 26th:</td>
+                        <td>Class 3</td>
+                      </tr>
+                      <tr>
+                        <td>April 30th:</td>
+                        <td>Example</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -109,4 +101,3 @@
       </div>
     </div>
   </div>
-</section>

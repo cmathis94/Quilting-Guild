@@ -1,54 +1,68 @@
 <%= layout('layouts/boilerplate') %>
-<section class="hero is-fullheight">
+
   <div class="container">
-    <div class="columns is-centered mb-0">
-      <div class="column is-10">
-        <figure class="image">
-          <img src="/img/MSQG_Logo.png" alt="" class="has-image-centered" />
+    <div class="row mt-4">
+      <div class="col">
+        <figure class="text-center">
+          <img src="/img/MSQG_Logo.png" alt="" class="" style="max-height: 50%; max-width: 50%" />
         </figure>
       </div>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-5">
-        <form class="box">
-          <h3 class="title">Report an Issue:</h3>
-          <div class="field">
-            <label for="name" class="label">Name</label>
-            <div class="control has-icons-left has-icons-right">
-              <input type="text" class="input" placeholder="Full Name" />
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-            </div>
-          </div>
-          <div class="field">
-            <label for="email" class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input type="text" class="input" placeholder="jdoe@example.com" />
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Issue</label>
-            <div class="control">
-              <textarea
-                class="textarea"
-                placeholder="What seems to be the problem?"
-              ></textarea>
-            </div>
-          </div>
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-link">Submit</button>
-            </div>
-            <div class="control">
-              <a href="/" class="button is-link is-light">Cancel</a>
+    <div class="row align-items-center justify-content-center mb-5">
+      <div class="col-6">
+        <form class="" novalidate>
+          <div class="card shadow" style="background-color: #f8f9fa;">
+            <div class="card-body">
+              <h3 class="">Report Issue:</h3>
+              <div class="row">
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder=" ">
+                    <label for="floatingInput">Full Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder=" ">
+                    <label for="floatingInput">Email Address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="floatingTextarea2" placeholder=" "
+                      style="height: 100px;"></textarea>
+                    <label for="floatingTextarea2">Issue</label>
+                  </div>
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-4 text-center">
+                      <button type="submit" class="btn btn-primary mb-2 px-5 text-center">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </form>
       </div>
     </div>
   </div>
-</section>
+
+
+  <script>
+    (function () {
+      'use strict';
+
+      const forms = document.querySelectorAll('.formValidation');
+
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener(
+          'submit',
+          function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add('was-validated');
+          },
+          false
+        );
+      });
+    });
+  </script>
