@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 const exp = require('constants');
 const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
+const Contact = require('./models/contactUs')
+const Report = require('./models/reportIssue')
 /* const bootstrap = require('bootstrap'); */
-/* mongoose.connect('mongodb://localhost:27017/ms-quilt-guild'); */
+mongoose.connect('mongodb://127.0.0.1:27017/ms-quilt-guild');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -35,8 +37,24 @@ app.get('/contact-us', async (req, res) => {
   res.render('contact');
 });
 
+app.post('/contact-us', async (req, res) => {
+  const contact = new Contact(req.body.contact);
+  await contact.save();
+  res.redirect('/thank-you')
+});
+
 app.get('/report-an-issue', async (req, res) => {
   res.render('reportIssue');
+});
+
+app.post('/report-an-issue', async (req, res) => {
+  const report = new Report(req.body.report);
+  await report.save();
+  res.redirect('/thank-you')
+});
+
+app.get('/thank-you', async (req, res) => {
+  res.render('formSubmission');
 });
 
 app.get('/events', async (req, res) => {

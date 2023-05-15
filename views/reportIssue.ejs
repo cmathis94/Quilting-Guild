@@ -10,24 +10,26 @@
     </div>
     <div class="row align-items-center justify-content-center mb-5">
       <div class="col-6">
-        <form class="" novalidate>
-          <div class="card shadow" style="background-color: #f8f9fa;">
-            <div class="card-body">
+        <div class="card shadow" style="background-color: #f8f9fa;">
+          <div class="card-body">
+            <form action="report-an-issue" method="post" class="formValidation" novalidate>
               <h3 class="">Report Issue:</h3>
               <div class="row">
                 <div class="col">
                   <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder=" ">
-                    <label for="floatingInput">Full Name</label>
+                    <input type="text" class="form-control" id="floatingInput fullName" placeholder=" "
+                      name="report[fullName]" required>
+                    <label for="floatingInput fullName">Full Name</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder=" ">
-                    <label for="floatingInput">Email Address</label>
+                    <input type="email" class="form-control" id="floatingInput email" placeholder=" "
+                      name="report[email]" required>
+                    <label for="floatingInput email">Email Address</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <textarea class="form-control" id="floatingTextarea2" placeholder=" "
-                      style="height: 100px;"></textarea>
-                    <label for="floatingTextarea2">Issue</label>
+                    <textarea class="form-control" id="floatingTextarea2 issue" placeholder=" " style="height: 100px;"
+                      name="report[issue]" required></textarea>
+                    <label for="floatingTextarea2 issue">Issue</label>
                   </div>
                   <div class="row align-items-center justify-content-center">
                     <div class="col-4 text-center">
@@ -36,24 +38,24 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 
 
   <script>
-    (function () {
+    (() => {
       'use strict';
 
       const forms = document.querySelectorAll('.formValidation');
 
-      Array.from(forms).forEach(function (form) {
+      Array.from(forms).forEach(form => {
         form.addEventListener(
           'submit',
-          function (event) {
+          event => {
             if (!form.checkValidity()) {
               event.preventDefault();
               event.stopPropagation();
@@ -64,5 +66,5 @@
           false
         );
       });
-    });
+    })();
   </script>
