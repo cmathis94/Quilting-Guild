@@ -65,6 +65,10 @@ app.get('/gallery', async (req, res) => {
   res.render('gallery');
 });
 
+app.get('/privacy-policy', async (req, res) => {
+  res.render('privacyPolicy');
+});
+
 app.listen(3000, () => {
   console.log('On Port 3000');
 });
