@@ -7,13 +7,13 @@ const ejsMate = require('ejs-mate');
 const Contact = require('./models/contactUs');
 const Report = require('./models/reportIssue');
 /* const bootstrap = require('bootstrap'); */
-mongoose.connect('mongodb://127.0.0.1:27017/ms-quilt-guild');
+/* mongoose.connect('mongodb://127.0.0.1:27017/ms-quilt-guild');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
   console.log('Database connected');
-});
+}); */
 
 const app = express();
 
@@ -69,6 +69,7 @@ app.get('/privacy-policy', async (req, res) => {
   res.render('privacyPolicy');
 });
 
-app.listen(3000, () => {
-  console.log('On Port 3000');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log('On Port ' + port);
 });
