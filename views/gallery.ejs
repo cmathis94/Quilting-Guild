@@ -1,23 +1,28 @@
 <%= layout('layouts/boilerplate') %>
 
-    <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
-    </div>
+<div class="col-12 text-center">
+  <h1 class="h1">Coming Soon...</h1>
+</div>
 
-    <script>
-        window.fbAsyncInit = () => {
-            FB.init({
-                appId: '1530306077495709',
-                xfbml: true,
-                version: 'v16.0'
-            });
-            FB.AppEvents.logPageView();
-        };
+<script>
+  window.fbAsyncInit = () => {
+    FB.init({
+      appId: '1530306077495709',
+      xfbml: true,
+      version: 'v16.0',
+    });
+    FB.AppEvents.logPageView();
+  };
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+  (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, 'script', 'facebook-jssdk');
+</script>
