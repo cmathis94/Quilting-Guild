@@ -12,7 +12,8 @@
       <div class="col-6">
         <div class="card shadow" style="background-color: #f8f9fa;">
           <div class="card-body">
-            <form action="/contact-us" method="post" class="formValidation" novalidate>
+            <form action="/contact-us" enctype="multipart/form-data" id="contact-form" method="post"
+              class="formValidation" novalidate>
               <h3 class="">Contact Us:</h3>
               <div class="row">
                 <div class="col">
@@ -33,7 +34,7 @@
                   </div>
                   <div class="row align-items-center justify-content-center">
                     <div class="col-4 text-center">
-                      <button type="submit" class="btn btn-primary mb-2 px-5 text-center">Send</button>
+                      <button type="submit" value="submit" class="btn btn-primary mb-2 px-5 text-center">Send</button>
                     </div>
                   </div>
                 </div>
@@ -45,26 +46,4 @@
     </div>
   </div>
 
-
-  <script>
-    (() => {
-      'use strict';
-
-      const forms = document.querySelectorAll('.formValidation');
-
-      Array.from(forms).forEach(form => {
-        form.addEventListener(
-          'submit',
-          event => {
-            if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-
-            form.classList.add('was-validated');
-          },
-          false
-        );
-      });
-    })();
-  </script>
+  <script src="../contactUs.js"></script>
