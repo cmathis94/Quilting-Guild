@@ -1,7 +1,16 @@
 <%= layout('layouts/boilerplate') %>
 
-<div class="row">
-  <div class="col-12 text-center">
-    <h1 class="h1">Coming Soon...</h1>
+<div class="container h-100">
+  <div class="row align-items-center justify-content-center h-100">
+    <div class="col-8"><%- include('partials/calendar') %></div>
   </div>
 </div>
+
+<style>
+  main {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+  }
+</style>
