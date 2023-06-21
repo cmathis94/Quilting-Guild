@@ -1,49 +1,87 @@
 <%= layout('layouts/boilerplate') %>
 
-  <div class="container">
-    <div class="row mt-4">
-      <div class="col">
-        <figure class="text-center">
-          <img src="/img/MSQG_Logo.png" alt="" class="" style="max-height: 50%; max-width: 50%" />
-        </figure>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="row mt-4">
+        <div class="col">
+          <figure class="figure-img text-center">
+            <img
+              src="/img/MSQG_Logo.png"
+              alt=""
+              class="img-fluid"
+              style="max-height: 50%; max-width: 50%"
+            />
+          </figure>
+        </div>
       </div>
-    </div>
-    <div class="row align-items-center justify-content-center mb-5">
-      <div class="col-6">
-        <div class="card shadow" style="background-color: #f8f9fa;">
-          <div class="card-body">
-            <form action="/contact-us" enctype="multipart/form-data" id="contact-form" method="post"
-              class="formValidation" novalidate>
-              <h3 class="">Contact Us:</h3>
+      <div class="row align-items-center justify-content-center mb-5">
+        <div class="col-6">
+          <div class="card shadow" style="background-color: #f8f9fa">
+            <div class="card-body">
+              <h3 class="h3 text-center mb-4"><ins>Contact Us</ins></h3>
               <div class="row">
                 <div class="col">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput fullName" placeholder=" "
-                      name="contact[fullName]" required>
-                    <label for="floatingInput">Full Name</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput email" placeholder=" "
-                      name="contact[email]" required>
-                    <label for="floatingInput">Email Address</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" id="floatingTextarea2 message" placeholder=" " style="height: 100px;"
-                      name="contact[message]" required></textarea>
-                    <label for="floatingTextarea2">Message</label>
-                  </div>
-                  <div class="row align-items-center justify-content-center">
-                    <div class="col-4 text-center">
-                      <button type="submit" value="submit" class="btn btn-primary mb-2 px-5 text-center">Send</button>
+                  <form
+                    action="/contact-us"
+                    id="contact-form"
+                    method="post"
+                    class="formValidation"
+                    novalidate
+                  >
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput fullName"
+                        placeholder=" "
+                        name="contact[fullName]"
+                        required
+                      />
+                      <label for="floatingInput">Full Name</label>
                     </div>
-                  </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput email"
+                        placeholder=" "
+                        name="contact[email]"
+                        required
+                      />
+                      <label for="floatingInput">Email Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea
+                        class="form-control"
+                        id="floatingTextarea2 message"
+                        placeholder=" "
+                        style="height: 100px"
+                        name="contact[message]"
+                        required
+                      ></textarea>
+                      <label for="floatingTextarea2">Message</label>
+                    </div>
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-4 text-center">
+                        <button
+                          type="submit"
+                          value="submit"
+                          class="btn btn-primary mb-2 px-5 text-center"
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <script src="../contactUs.js"></script>
+<script text="text/javascript" src="/JS/contactUs.js"></script>

@@ -4,16 +4,17 @@ const mongoose = require('mongoose');
 const exp = require('constants');
 const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
-const Contact = require('./models/contactUs');
+const Contact = require('./models/contactForm');
 const Report = require('./models/reportIssue');
-/* const bootstrap = require('bootstrap'); */
-/* mongoose.connect('mongodb://127.0.0.1:27017/ms-quilt-guild');
+// const bootstrap = require('bootstrap');
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => {
-  console.log('Database connected');
-}); */
+// mongoose.connect('mongodb://127.0.0.1:27017/ms-quilt-guild-test');
+
+// const db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', () => {
+//   console.log('Database connected');
+// });
 
 const app = express();
 
