@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public/assets'));
 
 app.use((req, res, next) => {
-  if (req.protocol === 'http') {
+  if (!req.secure) {
     return res.redirect(301, `https://${req.headers.host}${req.url}`);
   }
 
