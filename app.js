@@ -24,25 +24,26 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public/assets'));
 
-// app.enable('trust proxy');
-// app.use((req, res, next) => {
-//   if (process.env.NODE_ENV != 'development' && !request.secure) {
-//     return res.redirect('https://' + req.headers.host + req.url);
-//   }
-// });
+app.use((req, res, next) => {
+  if (req.protocol === 'http') {
+    return res.redirect(301, `https://${req.headers.host}${req.url}`);
+  }
+
+  next();
+});
 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.render('home');
 });
 
-app.get('/about-us', async (req, res) => {
+app.get('/about-us', async (_req, res) => {
   res.render('about');
 });
 
-app.get('/contact-us', async (req, res) => {
+app.get('/contact-us', async (_req, res) => {
   res.render('contact');
 });
 
@@ -52,7 +53,7 @@ app.post('/contact-us', async (req, res) => {
   res.redirect('/thank-you');
 });
 
-app.get('/report-an-issue', async (req, res) => {
+app.get('/report-an-issue', async (_req, res) => {
   res.render('reportIssue');
 });
 
@@ -62,19 +63,19 @@ app.post('/report-an-issue', async (req, res) => {
   res.redirect('/thank-you');
 });
 
-app.get('/thank-you', async (req, res) => {
+app.get('/thank-you', async (_req, res) => {
   res.render('formSubmission');
 });
 
-app.get('/events', async (req, res) => {
+app.get('/events', async (_req, res) => {
   res.render('events');
 });
 
-app.get('/gallery', async (req, res) => {
+app.get('/gallery', async (_req, res) => {
   res.render('gallery');
 });
 
-app.get('/privacy-policy', async (req, res) => {
+app.get('/privacy-policy', async (_req, res) => {
   res.render('privacyPolicy');
 });
 
