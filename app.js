@@ -24,12 +24,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public/assets'));
 
-app.enable('trust proxy');
-app.use((req, res, next) => {
-  if (process.env.NODE_ENV != 'development' && !request.secure) {
-    return res.redirect('https://' + req.headers.host + req.url);
-  }
-});
+// app.enable('trust proxy');
+// app.use((req, res, next) => {
+//   if (process.env.NODE_ENV != 'development' && !request.secure) {
+//     return res.redirect('https://' + req.headers.host + req.url);
+//   }
+// });
 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
