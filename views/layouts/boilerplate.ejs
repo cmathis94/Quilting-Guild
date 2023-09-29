@@ -22,7 +22,23 @@
 
   <body class="d-flex flex-column min-vh-100" style="background-color: #ecf9ff">
     <%- include('../partials/navbar') %>
-    <main><%- body %></main>
+    <main>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col">
+            <figure class="figure-img text-center mb-4">
+              <img
+                src="/img/MSQG_Logo.png"
+                alt=""
+                class="img-fluid"
+                style="max-height: 50%; max-width: 50%"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+      <%- body %>
+    </main>
     <%- include('../partials/footer') %>
     <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script
