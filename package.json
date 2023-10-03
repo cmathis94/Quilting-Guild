@@ -2,7 +2,7 @@
   "name": "quilting-guild",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "compile:sass": "sass --watch public/scss:public/assets/css",
     "start": "node app.js"
