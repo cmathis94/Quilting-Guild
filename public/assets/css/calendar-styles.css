@@ -12,6 +12,12 @@
   justify-content: space-between;
 }
 
+.calendar-container footer {
+  display: flex;
+  justify-content: center;
+  padding: 0px 30px 25px;
+}
+
 header .calendar-navigation {
   display: flex;
 }
@@ -37,7 +43,8 @@ header .calendar-navigation span:hover {
   background: #f2f2f2;
 }
 
-header .calendar-current-date {
+header,
+footer .calendar-current-date {
   font-weight: 500;
   font-size: 1.45rem;
 }
