@@ -67,6 +67,10 @@ app.get('/thank-you', async (_req, res) => {
   res.render('formSubmission');
 });
 
+app.get('/events', async (_req, res) => {
+  res.render('events');
+});
+
 app.get('/gallery', async (_req, res) => {
   res.render('gallery');
 });

@@ -8,10 +8,6 @@ const currdate = document.querySelector('.calendar-current-date');
 
 const prenexIcons = document.querySelectorAll('.calendar-navigation span');
 
-const dateEvents = document.querySelector('.calendar-dates');
-
-const calendarEvents = document.querySelector('.calendar-events');
-
 // Array of month names
 const months = [
   'January',
@@ -31,27 +27,27 @@ const months = [
 // Function to generate the calendar
 const manipulate = () => {
   // Get the first day of the month
-  let dayOne = new Date(year, month, 1).getDay();
+  let dayone = new Date(year, month, 1).getDay();
 
   // Get the last date of the month
-  let lastDate = new Date(year, month + 1, 0).getDate();
+  let lastdate = new Date(year, month + 1, 0).getDate();
 
   // Get the day of the last date of the month
-  let dayEnd = new Date(year, month, lastDate).getDay();
+  let dayend = new Date(year, month, lastdate).getDay();
 
   // Get the last date of the previous month
-  let monthLastDate = new Date(year, month, 0).getDate();
+  let monthlastdate = new Date(year, month, 0).getDate();
 
   // Variable to store the generated calendar HTML
   let lit = '';
 
   // Loop to add the last dates of the previous month
-  for (let i = dayOne; i > 0; i--) {
-    lit += `<li class="inactive">${monthLastDate - i + 1}</li>`;
+  for (let i = dayone; i > 0; i--) {
+    lit += `<li class="inactive">${monthlastdate - i + 1}</li>`;
   }
 
   // Loop to add the dates of the current month
-  for (let i = 1; i <= lastDate; i++) {
+  for (let i = 1; i <= lastdate; i++) {
     // Check if the current date is today
     let isToday =
       i === date.getDate() &&
@@ -63,8 +59,8 @@ const manipulate = () => {
   }
 
   // Loop to add the first dates of the next month
-  for (let i = dayEnd; i < 6; i++) {
-    lit += `<li class="inactive">${i - dayEnd + 1}</li>`;
+  for (let i = dayend; i < 6; i++) {
+    lit += `<li class="inactive">${i - dayend + 1}</li>`;
   }
 
   // Update the text of the current date element
@@ -75,6 +71,7 @@ const manipulate = () => {
   // with the generated calendar
   day.innerHTML = lit;
 };
+
 manipulate();
 
 // Attach a click event listener to each icon
@@ -105,12 +102,4 @@ prenexIcons.forEach((icon) => {
     // update the calendar display
     manipulate();
   });
-});
-
-day.addEventListener('click', (event) => {
-  if (calendarEvents.style.display === 'block') {
-    calendarEvents.style.display = 'none';
-  } else {
-    calendarEvents.style.display = 'block';
-  }
 });
