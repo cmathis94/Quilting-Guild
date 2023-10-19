@@ -23,3 +23,15 @@ footer.footer {
 .card {
   border-color: none !important;
 }
+
+#logoIMG {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  #logoIMG {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

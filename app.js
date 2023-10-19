@@ -1,11 +1,11 @@
 const express = require('express');
 const path = require('path');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const exp = require('constants');
 const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
-const Contact = require('./models/contactForm');
-const Report = require('./models/reportIssue');
+// const Contact = require('./models/contactForm');
+// const Report = require('./models/reportIssue');
 // const bootstrap = require('bootstrap');
 
 // mongoose.connect('mongodb://127.0.0.1:27017/ms-quilt-guild-test');
